@@ -6,11 +6,13 @@
     <title><%= title %></title>
 </head>
 <body>
-    <h1>hi</h1>
+    <h1>Message Board</h1>
     <% for(let i = 0; i<messages.length; i++){ %>
-        <h1><%= messages[i].text %></h1>
-        <h2><%= messages[i].user %></h2>
-        <h2><%= messages[i].added %></h2>
+        <h2><%= messages[i].text %></h2>
+        <h3><%= messages[i].user %></h3>
+        <h3><%= messages[i].added %></h3>
+        <a href = "<%= 'display/' + i %>">open message</a>
     <% } %>
+    <a href = "/new">New Message!</a>
 </body>
 </html>
