@@ -2,9 +2,10 @@
   "name": "message-board-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "node --watch app.js"
+    "dev": "node --watch app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
